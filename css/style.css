@@ -1,0 +1,109 @@
+* {
+  /* такое правило поможет нам, правильно считать ширину и высоту обьектов, что б ничего у нас не разьежалось и не выходило за рамки доступного */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+.header {
+  display: flex; /* в одну строку */
+  align-items: center; /* выравние по центру */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 32px;
+  padding-right: 70px;
+}
+
+/* MENU BUTTON */
+.menu-button {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 20px;
+  height: 17px;
+  border: none;
+  margin-right: 28px;
+  cursor: pointer; /* Указатель, обозначающий ссылку, обычно указующая рука. */
+}
+
+.menu-line {
+  display: block;
+  background: #1f2022;
+  border-radius: 20px;
+  width: 20px;
+  height: 3px;
+}
+
+.logo {
+  margin-right: 59px;
+}
+
+/* INPUT SEARCH */
+.input-group {
+  background: #ebebeb;
+  border-radius: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 17px;
+  max-width: 830px;
+  width: 50%;
+}
+
+.input-search {
+  background-color: transparent; /* прозрачность */
+  border: none; /* убрали обводку */
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.button-search {
+  padding: 0;
+  width: 19px;
+  height: 19px;
+  border: none;
+  background-color: transparent; /* прозрачность */
+  cursor: pointer;
+}
+
+.icon-search {
+  fill: #000;
+}
+
+/* HEADER ICONS */
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.icons-link {
+  text-decoration: none;
+  opacity: 0.24;
+}
+
+.icons-link:hover {
+  opacity: 0.7;
+}
+
+.icons-link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.user {
+  margin-left: 45px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
