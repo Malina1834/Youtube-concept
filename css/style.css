@@ -4,7 +4,9 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* HEADER */
@@ -15,6 +17,7 @@ body {
   padding-bottom: 20px;
   padding-left: 32px;
   padding-right: 70px;
+  margin-bottom: 30px;
 }
 
 /* MENU BUTTON */
@@ -56,6 +59,7 @@ body {
 }
 
 .input-search {
+  width: 100%;
   background-color: transparent; /* прозрачность */
   border: none; /* убрали обводку */
   padding-top: 12px;
@@ -78,7 +82,6 @@ body {
 }
 
 /* HEADER ICONS */
-
 .icons {
   display: flex;
   align-items: center;
@@ -98,6 +101,7 @@ body {
   margin-right: 50px;
 }
 
+/* HEADER USER */
 .user {
   margin-left: 45px;
 }
@@ -106,4 +110,56 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+/* SIDEBAR */
+.sidebar {
+  padding-left: 32px;
+}
+
+.nav-menu {
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin-bottom: 28px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #898989;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ff0000;
+}
+
+.nav-link:hover .icon {
+  fill: #ff0000;
+}
+
+.nav-item .icon {
+  fill: #898989;
+}
+
+.nav-text {
+  margin-left: 13px;
+}
+
+.nav-image {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.nav-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 30px;
 }
